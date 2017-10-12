@@ -9,7 +9,8 @@ driverPos = list()
 dropOffPos = list()
 pickUpPos = list()
 
-with open('/home/administrateur/Workspace/results-20170726-154612.csv', 'r') as csvfile:
+inputfile = '/home/administrateur/Workspace/results-20170726-154612.csv'
+with open(inputfile, 'r') as csvfile:
    posreader=csv.reader(csvfile, delimiter=',')
    for row in posreader:
      #print(row)
